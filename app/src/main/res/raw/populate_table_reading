@@ -1,0 +1,2 @@
+INSERT INTO Reading(title, part, author, text) VALUES
+("試行", "Vince", "上", "私は三年間日本語を勉強しています。まだ終わていません。毎日字を書く練習をします。");

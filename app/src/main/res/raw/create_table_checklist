@@ -1,0 +1,6 @@
+CREATE TABLE Checklist (
+    userId INTEGER REFERENCES User(uid) ON DELETE CASCADE,
+	kanji TEXT REFERENCES Kanji(kanji),
+    learned INTEGER NOT NULL DEFAULT 0,
+	PRIMARY KEY(userId, kanji)
+);

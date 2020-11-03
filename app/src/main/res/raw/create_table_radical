@@ -1,0 +1,4 @@
+CREATE TABLE Radical (
+    radical TEXT PRIMARY KEY,
+	strokes INTEGER NOT NULL
+);

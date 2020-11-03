@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/actionText"
+        android:title="@string/menuText"
+        android:icon="@drawable/ic_description_black_24dp"
+        android:checkable="true"/>
+
+    <item android:id="@+id/actionKanji"
+        android:title="@string/menuKanji"
+        android:icon="@drawable/ic_ji_black_24dp"
+        android:checkable="true" />
+
+    <!--<item android:id="@+id/actionDictionary"
+        android:title="@string/menuDictionary"
+        android:icon="@mipmap/ic_launcher"
+        android:checkable="true"/> -->
+
+    <item android:id="@+id/actionSettings"
+        android:title="@string/menuSettings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:checkable="true" />
+</menu>

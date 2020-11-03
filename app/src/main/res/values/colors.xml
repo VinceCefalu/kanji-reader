@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#2aac4b</color>
+    <color name="colorGrey">#B3B3B3</color>
+    <color name="colorTransparent">#FFFFFF</color>
+    <color name="colorLearned">#00e500</color>
+    <!-- app/src/main/res/values/colors.xml -->
+    <color name="darkColorPrimary">#1e2756</color>
+    <color name="darkColorPrimaryDark">#141831</color>
+    <color name="darkColorAccent">#2aac4b</color>
+    <color name="darkBackground">#141831</color>
+    <color name="colorRed">#e50000</color>
+    <color name="colorYellow">#e5c100</color>
+    <color name="colorGreen">#00e500</color>
+    <color name="materialDark">#FF303030</color>
+    <color name="borderColor">#000000</color>
+</resources>

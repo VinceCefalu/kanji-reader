@@ -1,0 +1,80 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="firsttry.kanjireader.SettingsFragment">
+
+    <!-- Creates margins for the sides -->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideLeftMargin"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideRightMargin"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideTopMargin"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideBottomMargin"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideLabelTop"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.19"/>
+
+    <TextView
+        android:id="@+id/lblDark"
+        android:text="Dark Theme"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/guideLabelTop"
+        app:layout_constraintLeft_toRightOf="@id/guideLeftMargin"/>
+
+    <Switch
+        android:id="@+id/switchTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/guideRightMargin"
+        app:layout_constraintTop_toBottomOf="@id/guideLabelTop"
+        android:layout_marginTop="5dp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/lblDark"-->
+        <!--android:text="Dark Theme"-->
+        <!--android:textSize="30sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/lblLight"-->
+        <!--app:layout_constraintLeft_toRightOf="@id/guideLeftMargin"-->
+        <!--android:layout_marginTop="50dp"/>-->
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/chkDark"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintRight_toLeftOf="@id/guideRightMargin"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/chkLight"-->
+        <!--android:onClick=""-->
+        <!--android:layout_marginTop="50dp"/>-->
+
+</android.support.constraint.ConstraintLayout>

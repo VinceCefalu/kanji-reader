@@ -1,0 +1,50 @@
+<resources>
+    <!-- General Use -->
+    <string name="app_name">Kanji Reader</string>
+    <string name="authors">Created by: Matt Neis, Vince Cefalu</string>
+    <string name="kanji_temp">漢字</string>
+    <string name="create_user">Create New User</string>
+    <string name="delete_user">Delete user?</string>
+    <string name="searchDictionary">Search Dictionary</string>
+    <string name="menuText">Text</string>
+    <string name="menuKanji">Kanji</string>
+    <string name="menuDictionary">Dictionary</string>
+    <string name="menuSettings">Settings</string>
+    <string name="txtTotal">Learned: </string>
+
+    <!-- Strings for dialogfragment -->
+    <string name="OldForm">Old Form</string>
+    <string name="Onyomi">Onyomi:\t</string>
+    <string name="Kunyomi">Kunyomi:</string>
+    <string name="Strokes">Strokes:\t</string>
+    <string name="Radical">Radical:\t</string>
+    <string name="Part">Parts:\t</string>
+    <string name="Grade">Grade: </string>
+
+    <!-- strings for reading list -->
+    <string name="KanjiUnknown">Kanji\nUnknown</string>
+    <string name="Author">Author</string>
+    <string name="Title">Title</string>
+    <string name="NewReading">Add New Reading</string>
+
+    <!-- strings for kanji fragment -->
+    <string name="SortBy">Sort by</string>
+    <string name="spinPrompt">Select Choice</string>
+    <string name="searchKanji">Search Kanji</string>
+    <string-array name="sortOptions">
+        <item>Grade</item>
+        <item>Strokes</item>
+        <item>Radical</item>
+    </string-array>
+
+    <!-- strings for the edit readings scene -->
+    <string name="readingTitle">Title:</string>
+    <string name="readingAuthor">Author:</string>
+    <string name="readingPart">Part:</string>
+    <string name="readingText">Text:</string>
+    <string name="titleHint">Enter title here</string>
+    <string name="authorHint">Enter author here</string>
+    <string name="partHint">Enter part here</string>
+    <string name="submitReading">Submit Reading</string>
+
+</resources>

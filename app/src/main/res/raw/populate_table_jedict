@@ -1,0 +1,2 @@
+INSERT INTO JEDict VALUES
+('学生', 'student', NULL, 'がく.せい', NULL);

@@ -1,0 +1,118 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="firsttry.kanjireader.KanjiFragment">
+
+    <!-- Creates margins for the sides -->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideLeftMargin"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="19dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideRightMargin"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="365dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideTopMargin"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.0"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideBottomMargin"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.90"
+        tools:layout_editor_absoluteY="567dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <!-- label guide -->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideLabelTop"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.09"
+        tools:layout_editor_absoluteY="51dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <!-- Grid guide -->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideGridTop"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.13"
+        tools:layout_editor_absoluteY="74dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Spinner
+        android:id="@+id/spinSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@+id/guideRightMargin"
+        app:layout_constraintBottom_toTopOf="@+id/guideGridTop"
+        app:layout_constraintTop_toTopOf="@+id/guideTopMargin" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:text="Learned: 2136/2136"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/txtSearch"
+        app:layout_constraintRight_toLeftOf="@+id/spinSort"
+        app:layout_constraintBottom_toTopOf="@+id/guideGridTop"
+        app:layout_constraintTop_toTopOf="@+id/guideTopMargin" />
+
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/searchKanji"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/guideGridTop"
+        app:layout_constraintLeft_toLeftOf="@+id/guideLeftMargin"
+        app:layout_constraintTop_toTopOf="@+id/guideTopMargin" />
+
+    <TextView
+        android:id="@+id/txtSortBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SortBy"
+        app:layout_constraintBottom_toTopOf="@id/spinSort"
+        app:layout_constraintRight_toLeftOf="@id/guideRightMargin"
+        android:layout_marginEnd="65dp"/>
+
+    <GridView
+        android:id="@+id/gridKanji"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:columnWidth="50dp"
+        android:longClickable="true"
+        android:numColumns="7"
+        app:layout_constraintLeft_toLeftOf="@+id/guideLeftMargin"
+        app:layout_constraintRight_toLeftOf="@+id/guideRightMargin"
+        app:layout_constraintTop_toTopOf="@+id/guideGridTop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

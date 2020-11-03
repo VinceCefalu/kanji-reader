@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listScene">
+
+    <!-- label guide -->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideLabelTop"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        tools:layout_editor_absoluteY="27dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <!-- guide for listview -->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideListTop"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.13"
+        tools:layout_editor_absoluteY="87dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <!-- Labels for listview -->
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_marginStart="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideLabelTop" />
+
+    <TextView
+        android:id="@+id/lblUnknown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/KanjiUnknown"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideLabelTop"/>
+
+    <TextView
+        android:id="@+id/lblAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Author"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/lblUnknown"
+        app:layout_constraintBottom_toTopOf="@+id/guideLabelTop"
+        app:layout_constraintHorizontal_bias="0.42"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="40dp"/>
+
+    <!-- Create the listview -->
+    <ListView
+        android:id="@+id/listText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideLabelTop" />
+
+</android.support.constraint.ConstraintLayout>

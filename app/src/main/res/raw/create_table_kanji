@@ -1,0 +1,11 @@
+CREATE TABLE Kanji (
+    kanji TEXT PRIMARY KEY,
+    radical TEXT REFERENCES Radical(radical),
+	strokes INTEGER NOT NULL,
+    grade INTEGER,
+	parts TEXT,
+    onyomi TEXT,
+    kunyomi TEXT,
+	officialList TEXT,
+	oldForm TEXT
+);

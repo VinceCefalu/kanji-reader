@@ -1,0 +1,5 @@
+CREATE TABLE ReadingContains (
+	rid INTEGER REFERENCES Reading(rid) ON DELETE CASCADE,
+	kanji TEXT REFERENCES Kanji(kanji),
+	PRIMARY KEY(rid, kanji)
+);

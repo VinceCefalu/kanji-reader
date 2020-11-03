@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="firsttry.kanjireader.KanjiInfoFragment">
+
+    <TextView
+        android:id="@+id/txtKanji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:text="立"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/lblOldForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OldForm"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"/>
+
+    <TextView
+        android:id="@+id/txtOldForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:text="辨 瓣 辯"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/lblOldForm"
+        android:layout_marginEnd="5dp"/>
+
+    <TextView
+        android:id="@+id/lblOnyomi"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Onyomi"
+        android:textSize="22sp"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/txtKanji"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/lblKunyomi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Kunyomi"
+        android:textSize="22sp"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/lblOnyomi"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/lblStrokes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Strokes"
+        android:textSize="22sp"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/lblKunyomi"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/lblRadical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Radical"
+        android:textSize="22sp"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/lblStrokes"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/lblParts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Part"
+        android:textSize="22sp"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/lblRadical"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/lblGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Grade"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/lblParts"
+        android:layout_marginEnd="15dp"/>
+
+</RelativeLayout>

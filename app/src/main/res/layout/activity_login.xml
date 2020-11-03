@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="firsttry.kanjireader.LoginActivity">
+
+    <!-- Creates margins for the sides -->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideLeftMargin"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideRightMargin"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideTopMargin"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideBottomMargin"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="1"/>
+
+    <!-- Guideline for Title -->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideTitle"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <!-- Guidelines for ListView -->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideListTop"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.50"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideListBottom"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.80"/>
+
+    <!-- Guidelines for buttons -->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideButtonsBottom"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.90"/>
+
+    <!-- Text Views for title/authors -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="36sp"
+        app:layout_constraintTop_toTopOf="@id/guideTopMargin"
+        app:layout_constraintLeft_toLeftOf="@id/guideLeftMargin"
+        app:layout_constraintRight_toRightOf="@id/guideRightMargin"
+        app:layout_constraintBottom_toTopOf="@id/guideTitle"/>
+
+    <TextView
+        android:id="@+id/appAuthors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/authors"
+        app:layout_constraintTop_toBottomOf="@id/guideTitle"
+        app:layout_constraintLeft_toLeftOf="@id/guideLeftMargin"
+        app:layout_constraintRight_toRightOf="@id/guideRightMargin"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/kanji_brush"
+        app:layout_constraintBottom_toTopOf="@id/guideListTop"
+        app:layout_constraintLeft_toLeftOf="@id/guideLeftMargin"
+        app:layout_constraintRight_toRightOf="@id/guideRightMargin"
+        app:layout_constraintTop_toBottomOf="@id/appAuthors" />
+
+    <!-- Create the ListView -->
+    <ListView
+        android:id="@+id/listUsers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guideListTop"
+        app:layout_constraintBottom_toTopOf="@id/guideBottomMargin"
+        app:layout_constraintLeft_toLeftOf="@id/guideLeftMargin"
+        app:layout_constraintRight_toRightOf="@id/guideRightMargin" />
+
+</android.support.constraint.ConstraintLayout>

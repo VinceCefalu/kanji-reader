@@ -1,0 +1,7 @@
+CREATE TABLE JEDict (
+    word TEXT PRIMARY KEY,
+    eDef TEXT,
+    jDef TEXT,
+    readings TEXT,
+	particles TEXT
+);
